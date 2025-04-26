@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-gradient-custom {
+  background-image: linear-gradient(to right, #4a5568, #2d3748);
+}
+
+.btn-gradient-primary {
+  background-image: linear-gradient(to right, #8b5cf6, #d946ef);
+}
+
+.btn-gradient-primary:hover {
+  background-image: linear-gradient(to right, #7c3aed, #c81eef);
+}
+
+.btn-gradient-secondary {
+  background-image: linear-gradient(to right, #3b82f6, #6366f1);
+}
+
+.btn-gradient-secondary:hover {
+  background-image: linear-gradient(to right, #2563eb, #4f46e5);
+}
+
+.text-gray-custom {
+  color: #f7fafc;
+}
+
+.border-gray-custom {
+  border-color: #4a5568;
+}
+
+.bg-gray-custom {
+  background-color: #2d3748;
+}

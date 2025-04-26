@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-custom flex justify-center items-start min-h-screen py-10">
+  <div class="bg-gray-800 rounded-lg shadow-xl p-8 w-full max-w-2xl">
+    <h1 class="text-2xl font-semibold text-gray-custom mb-6 text-center">3D Print Image Prompt Generator</h1>
+    <div class="mb-4">
+      <label for="topic" class="block text-gray-custom text-sm font-bold mb-2">Topic:</label>
+      <input type="text" id="topic" placeholder="Enter the main subject e.g. 'a cat'" class="shadow appearance-none border border-gray-custom rounded w-full py-2 px-3 text-gray-custom leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white">
+    </div>
+    <div class="mb-6">
+      <label for="details" class="block text-gray-custom text-sm font-bold mb-2">Additional Details:</label>
+      <textarea id="details" placeholder="Specify details like style, composition, or specific elements" class="shadow appearance-none border border-gray-custom rounded w-full py-2 px-3 text-gray-custom leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white"></textarea>
+    </div>
+    <div class="mb-4">
+      <label for="style" class="block text-gray-custom text-sm font-bold mb-2">Style:</label>
+      <select id="style" class="shadow appearance-none border border-gray-custom rounded w-full py-2 px-3 text-gray-custom leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white">
+        <option value="">One-line art</option>
+        <option value="low-poly">Low-poly</option>
+        <option value="simplistic">Simplistic</option>
+        <option value="geometric">Geometric</option>
+        <option value="vector">Vector art</option>
+      </select>
+    </div>
+    <div class="flex justify-between mb-4">
+      <button id="generate" class="btn-gradient-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center">
+        Generate Prompt
+      </button>
+      <button id="clear" class="btn-gradient-secondary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center border border-gray-600">
+        Clear
+      </button>
+    </div>
+    <div id="prompt" class="mb-6 p-4 bg-gray-custom rounded-md border border-gray-custom text-gray-custom">
+      <p class="text-sm italic">Generated Prompt will appear here...</p>
+    </div>
+    <div class="mb-4">
+      <button id="copy-prompt" class="btn-gradient-secondary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center border border-gray-600">
+        Copy Prompt
+      </button>
+    </div>
+    <div class="flex flex-col gap-4">
+      <a href="https://www.bing.com/images/create?FORM=GENPW" target="_blank" rel="noopener noreferrer" class="btn-gradient-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center">
+        Generate Image on Bing
+      </a>
+      <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center">
+        Generate Image on ChatGPT
+      </a>
+      <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center">
+        Generate Image on Gemini
+      </a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
